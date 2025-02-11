@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+:root{
+--main-font: "Pretendard-Regular", sans-serif;
+--sub-font: "poppins", serif;
+--main-color: #282828;
+} 
+
+body {font-size: 1.6rem; font-family: "Poppins", 'Pretendard-Regular', serif; color: var(--main-color); line-height: 1.5;}
+
+.inner {max-width: 1700px; margin: 0 auto; padding: 0 5%;}
+
+/* 스크롤바 옵션*/
+::-webkit-scrollbar {
+    display: block;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-button {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+/* #header */
+#header {border-bottom: var(--main-color) 1px solid; background: #fff; width: 100%; position: fixed; top: 0;left: 0; z-index: 1000;}
+#header .inner {max-width: 100%;}
+#header .inner .header_all {display: flex; justify-content: space-between; align-items: center;}
+#header .inner .header_all .back a {display: flex; gap: 20px; align-items: center;}
+#header .inner .header_all .back a .back_img {background: url(../img/9041642_arrow_left_icon.svg) no-repeat center / 100%; width: 70px; height: 70px;}
+#header .inner .header_all .back a .back_txt {font-size: 2.2rem;font-family: var(--sub-font); font-weight: 700; color: #282828;}
+#header .inner .gotop {color: var(--main-color); font-size: 50px; font-weight: 900;}
+
+/* footer */
+#footer {border-top: #282828 1px solid; }
+#footer .inner {max-width: 100%; padding: 30px 5%; display: flex; justify-content: space-between; align-items: center;}
+
+#footer .inner .footer_txt {font-family: var(--main-font);}
+
+#footer .inner .contact {text-align: right;}
+#footer .inner .contact .contactus {padding-bottom: 20px; font-weight: 600; font-family: var(--sub-font);}
+#footer .inner .contact p {font-family: var(--sub-font);}
+
+
+/* gotop */
+.gotop {color: var(--main-color); font-size: 50px; font-weight: 900;}
+
+
+/* container */
+
+#container .inner .container_txt {margin-top: 150px;}
+#container .inner .container_txt .left {font-size: 6rem; color: var(--main-color);}
+#container .inner .container_img img {width: 100%; margin: 150px 0;}
