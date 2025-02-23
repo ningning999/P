@@ -32,7 +32,6 @@ body {font-size: 1.6rem; font-family: "Poppins", 'Pretendard-Regular', serif; co
 #header .header_all .top:hover {background: #282828;}
 #header .header_all a .top:hover .gotop_img {background: url(../img/arrow-up-svgrepo-com_w.svg) no-repeat center / 100%; width: 40px; height: 40px;}
 
-
 @media (max-width : 1024px) {
   #header .header_all .back a .back_txt {font-size: 1.8rem;}
 }
@@ -81,6 +80,7 @@ body {font-size: 1.6rem; font-family: "Poppins", 'Pretendard-Regular', serif; co
 }
 
 
+
 /* gotop */
 .gotop {color: var(--main-color); font-size: 50px; font-weight: 900;}
 
@@ -91,6 +91,8 @@ body {font-size: 1.6rem; font-family: "Poppins", 'Pretendard-Regular', serif; co
 #container .inner .container_txt .left h4 {font-size: 5.5rem; color: var(--main-color);}
 #container .inner .container_txt .left p {font-size: 3.5rem; color: var(--main-color);}
 
+#container .inner .mobile-br {display: none;}
+
 #container .inner .container_txt .right {display: flex; font-size: 1.8rem;}
 #container .inner .container_txt .right li {padding-bottom: 40px;}
 #container .inner .container_txt .right .sub_title {font-weight: 500; padding-bottom: 5px;}
@@ -99,12 +101,15 @@ body {font-size: 1.6rem; font-family: "Poppins", 'Pretendard-Regular', serif; co
 #container .inner .container_txt .right .txt_2 {margin-right: 50px;}
 #container .inner .container_txt .right .txt_2 img{width: 15px;}
 #container .inner .container_txt .right .txt_2 li > .sub_ex_link a {text-decoration: underline;}
+#container .inner .concept h3 {font-family: var(--main-font); font-size: 4.5rem; padding: 200px 0 50px;}
+#container .inner .concept p {padding-bottom: 200px; font-size: 1.8rem;}
+#container .inner .banner_img img {max-width: 100%;}
 #container .inner .container_img {display: flex; justify-content: center; align-items: center;  width: 100%;  padding: 200px 20px;  box-sizing: border-box;}
 #container .inner .container_img img {width: 100%;  max-width: 90%;  height: auto;  object-fit: contain;}
 
-
 @media (max-width : 1440px) {
   #container .inner .container_img {padding: 100px 20px;}
+  #container .inner .concept p {padding-bottom: 100px; }
   #container .inner .container_txt .left {width:100%; padding-bottom: 100px;}
   #container .inner .container_txt .right {gap: 100px;}
 }
@@ -118,6 +123,7 @@ body {font-size: 1.6rem; font-family: "Poppins", 'Pretendard-Regular', serif; co
 
 @media (max-width : 768px) {
   #container .inner .container_img {padding: 50px 20px;}
+  #container .inner .concept p {padding-bottom: 50px;}
   #container .inner .container_txt .left {padding-bottom: 80px;}
   #container .inner .container_txt {display: block;}
   #container .inner .container_txt .left h4 {font-size: 3.5rem;}
@@ -128,6 +134,9 @@ body {font-size: 1.6rem; font-family: "Poppins", 'Pretendard-Regular', serif; co
 }
 
 @media (max-width : 425px) {
+  #container .inner .concept h3 {font-size: 2.5rem; padding: 50px 0 20px;}
+  #container .inner .concept p {padding-bottom: 50px; font-size: 1.6rem;}
+  #container .inner .mobile-br {display: block;}
   #container .inner .container_txt .left {padding-bottom: 30px;}
   #container .inner .container_txt .left h4 {font-size: 3rem;}
   #container .inner .container_txt .left p {font-size: 2rem;}
@@ -135,3 +144,4 @@ body {font-size: 1.6rem; font-family: "Poppins", 'Pretendard-Regular', serif; co
   #container .inner .container_txt .right .txt_1 {width: calc(100% / 3);}
   #container .inner .container_txt .right .txt_2 {order: -1;}
 }
+
