@@ -1,4 +1,5 @@
 
+
 //header - 모든 메뉴 항목에 클릭 이벤트 추가
 document.querySelectorAll('nav ul li a').forEach(anchor => {
   anchor.addEventListener('click', function (event) {
@@ -58,7 +59,7 @@ counters.forEach((counter) => {
 
 // graphic
 const restaurant_list = new Swiper(".graphic", {
-  slidesPerView: 2.5,
+  slidesPerView: 3.5,
   spaceBetween: 20,
   loop: true,
   speed: 2000,
@@ -67,4 +68,26 @@ const restaurant_list = new Swiper(".graphic", {
     delay: 3000,
     disableOnInteraction: false,
   },
+});
+
+//web
+document.addEventListener("DOMContentLoaded", function () {
+  const projects = document.querySelectorAll(".project");
+
+  function handleScroll() {
+    const triggerBottom = window.innerHeight * 0.6; // 뷰포트 기준 활성화 지점
+
+    projects.forEach((project) => {
+      const projectTop = project.getBoundingClientRect().top;
+
+      if (projectTop < triggerBottom) {
+        project.classList.add("active");
+      } else {
+        project.classList.remove("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // 처음 로딩 시 체크
 });
